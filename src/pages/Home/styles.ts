@@ -32,6 +32,27 @@ export const HeroContent = styled.div`
     flex-direction: column;
     gap: 4.125rem;
   }
+
+  img#hero-img {
+    width: 100%;
+  }
+
+  @media (max-width: 1170px) {
+    > div {
+      min-width: 50%;
+      max-width: 80%;
+    }
+
+    img#hero-img {
+      width: 40%;
+    }
+  }
+
+  @media (max-width: 905px) {
+    img#hero-img {
+      display: none;
+    }
+  }
 `;
 
 export const Heading = styled.div`
@@ -54,6 +75,8 @@ export const Info = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-row-gap: 1.25rem;
+
+  gap: 0.5rem;
 
   > div {
     display: flex;
@@ -86,5 +109,18 @@ export const CoffeeList = styled.section`
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-row-gap: 40px;
     grid-column-gap: 32px;
+  }
+
+  @media (max-width: 1170px) {
+    > div {
+      margin-inline: auto;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 905px) {
+    > div {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 `;

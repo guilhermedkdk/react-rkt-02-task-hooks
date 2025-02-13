@@ -15,6 +15,11 @@ export const Container = styled.main`
   img {
     margin-bottom: -13px;
   }
+
+  @media (max-width: 930px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const Order = styled.section`

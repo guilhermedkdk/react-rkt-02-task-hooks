@@ -9,6 +9,11 @@ export const Container = styled.main`
   padding: 40px 20px;
   margin: 0 auto;
   gap: 32px;
+
+  @media (max-width: 1170px) {
+    max-width: 900px;
+    flex-direction: column;
+  }
 `;
 
 export const InfoContainer = styled.div`
@@ -39,6 +44,13 @@ export const FormsContainer = styled.div`
   gap: 32px;
 
   background-color: ${(props) => props.theme["base-card"]};
+
+  @media (max-width: 1170px) {
+    min-width: unset;
+
+    padding: 20px;
+    gap: 20px;
+  }
 `;
 
 export const AddressContainer = styled(FormsContainer)``;
@@ -73,6 +85,18 @@ export const AddressForm = styled.div`
     "neighborhood city state";
   grid-template-columns: 200px 1fr 60px;
   grid-gap: 16px 12px;
+
+  @media (max-width: 1170px) {
+    grid-template-areas:
+      "cep"
+      "street"
+      "number"
+      "fullAddress"
+      "neighborhood"
+      "city"
+      "state";
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const PaymentContainer = styled(FormsContainer)``;
@@ -95,6 +119,11 @@ export const PaymentOptions = styled.div`
     justify-content: space-between;
 
     gap: 12px;
+  }
+
+  @media (max-width: 1170px) {
+    flex-direction: column;
+    align-items: stretch;
   }
 `;
 

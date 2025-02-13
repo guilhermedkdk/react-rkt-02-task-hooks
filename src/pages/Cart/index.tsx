@@ -251,7 +251,7 @@ export function Cart() {
         </form>
       </InfoContainer>
 
-      <InfoContainer>
+      <InfoContainer className="selected-coffees">
         <h2>Cafés selecionados</h2>
 
         <CartTotal>
