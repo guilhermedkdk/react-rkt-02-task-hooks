@@ -1,50 +1,38 @@
-# React + TypeScript + Vite
+<h1 align="center"> Desafio - Coffee Delivery </h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+Uma aplicação de e-commerce para uma cafeteria fictícia feita como forma de um desafio do curso ReactJS da Rocketseat
+</p>
 
-Currently, two official plugins are available:
+<p align="center">
+<a href="">🔗 Live Preview</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#-tecnologias">🚀 Tecnologias</a>&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#-desafio">💻 Desafio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#-aprendizados">📚 Aprendizados</a>
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p align="center">
+<img alt="" src="./github/thumbnail-coffe.png" width="100%">
+</p>
 
-## Expanding the ESLint configuration
+## 🚀 Tecnologias
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- Configure the top-level `parserOptions` property like this:
+- React
+- Typescript
+- HTML e CSS
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 💻 Desafio
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+O "Coffee Delivery" foi um desafio do curso de ReactJS da Rocketseat no módulo "Hooks". Onde consolidei conhecimentos sobre Context API para estado global, estados, imutabilidade, componentização  e métodos de array (como `reduce`).
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## 📚 Aprendizados
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Este projeto foi feito como forma de um desafio dentro do curso de ReactJS no módulo "Hooks" da Rocketseat. Nele pude consolidar os conhecimentos sobre:
+
+### React
+- Hooks
+- Context API
+- Imutabilidade do estado
+- Componentização
